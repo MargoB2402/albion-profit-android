@@ -1,0 +1,45 @@
+name: Android bug or performance report
+description: Help improve the Android beta on your device
+title: "[Android] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include your password, overlay key or raw packet captures."
+  - type: input
+    id: device
+    attributes:
+      label: Device model and Android version
+      placeholder: Samsung Galaxy A54, Android 15
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: App version
+      placeholder: 0.4.0
+    validations:
+      required: true
+  - type: dropdown
+    id: region
+    attributes:
+      label: Albion server
+      options:
+        - Europe
+        - Americas
+        - Asia
+        - Not related to a server
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, city and item (if relevant)
+      description: What did you do? Include the module and whether the panel was open for performance issues.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+      description: Screenshots or a short recording are welcome; hide personal information.
+    validations:
+      required: true

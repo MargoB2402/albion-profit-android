@@ -1,0 +1,11 @@
+name: Android suggestion
+description: Suggest an improvement for the mobile companion
+title: "[Idea] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Explain the situation and what would make it easier.
+    validations:
+      required: true
