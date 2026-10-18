@@ -2,7 +2,7 @@
 
 Public Android beta downloads and device feedback for [Albion Profit Hub](https://albionprofithub.com/overlay#android) and [Albion Profit](https://promptly.sbs/overlay#android).
 
-**[Download APK 0.5.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.5.0/AlbionProfitSync-0.5.0.apk)** · Android 8.0+ · Phones and tablets · No separate PCAPdroid installation
+**[Download APK 0.5.1](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.5.1/AlbionProfitSync-0.5.1.apk)** · Android 8.0+ · Phones and tablets · No separate PCAPdroid installation
 
 ## What it does
 
@@ -10,11 +10,11 @@ Public Android beta downloads and device feedback for [Albion Profit Hub](https:
 - Preserves private price settings. The server enforces your subscription for paid analytics and actions.
 - Offers floating city prices, transport, crafting, enchanting, loot split, alerts, favorites and outbid listings.
 - Uses vertical navigation and narrow-screen layouts, with complete item search and tier/enchantment filters.
-- Optional private Island Tracker beta: observed crops and animals, estimated timers and confirmed farming actions. View state and recent history in the floating Islands tab (PRO / PRO+), with full history on the website.
+- Optional private Island Tracker beta: observed crops and animals, estimated timers and confirmed farming actions. View state and recent history in the floating Islands tab (PRO+), with full history on the website.
 
-## Island Tracker beta — 0.5.0
+## Island Tracker beta — 0.5.1
 
-Enable **Island tracking (beta)** in the app settings before starting capture, then enter an island and approach crops or animals. Collection is off by default and remains private, including when market prices are shared. Queued records survive restarts and retry after connectivity failures; queued/sent counters appear in the app and Islands panel.
+Enable **Island tracking (beta)** in the app settings before starting capture, then enter an island and approach crops or animals. Collection and server storage require PRO+. Collection is off by default and remains private, including when market prices are shared. Queued records survive restarts and retry after connectivity failures; queued/sent counters appear in the app and Islands panel.
 
 Timers reflect the last observed state. Planting, care actions and automatic Focus attribution are not recorded yet; unseen actions while you are away are not tracked. This new tracker has passed synthetic protocol and UI checks, but has **not yet been verified on a real island or Android device**. The earlier market capture test does not validate island tracking. Feedback from island owners is welcome.
 
