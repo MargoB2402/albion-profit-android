@@ -6,7 +6,7 @@ Start capture, show the floating overlay, open **Loot**, then tap **Start loot s
 
 The collector observes own silver after taxes, item drops and chest pickups, including merges into existing stacks. Unlinked bank/craft inventory updates and requests without confirmation are not counted. Loot is sent privately to your selected account, site and game server. Queue storage survives service restarts and retries failed uploads.
 
-The floating Loot tab groups silver/items, sorts by quantity/value/latest/name and expands up to 20 recent pickups per card. Use the website `/loot-logger` page for full account history, session filters and splitting. Website/server 1.9.0 updates are needed to retain session metadata. CSV file import and splitting on the website remain free.
+The floating Loot tab shows the 24 most recently seen loot types, sorts by quantity/value/latest/name and expands up to 20 recent pickups per card. Use the website `/loot-logger` page for full account history, session filters and splitting. Website/server 1.9.0 updates are needed to retain session metadata. CSV file import and splitting on the website remain free.
 
 Synthetic protocol, six-stack chest replay, subscription UI, narrow-screen and APK package checks passed. **Android loot capture has not yet been verified in live gameplay.** Encrypted or unobserved packets cannot be reconstructed. This is a separate Android beta; it does not replace the Windows updater.
 
