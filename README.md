@@ -1,8 +1,8 @@
 # Albion Profit Sync for Android
 
-## Android 0.8.0 beta - VPN transports and market capture
+## Android 0.8.1 beta - Hardened client and VPN transports
 
-**[Download APK 0.8.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.8.0/AlbionProfitSync-0.8.0.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
+**[Download APK 0.8.1](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.8.1/AlbionProfitSync-0.8.1.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
 
 Public direct-install beta for [Albion Profit Hub](https://albionprofithub.com/overlay#android) and [Albion Profit](https://promptly.sbs/overlay#android). Windows is distributed separately at [albion-profit-overlay](https://github.com/MargoB2402/albion-profit-overlay/releases/latest).
 
@@ -18,6 +18,10 @@ Public direct-install beta for [Albion Profit Hub](https://albionprofithub.com/o
 5. Browse a city market. Full-page price collection does not require opening every item. Allow display over other apps for the floating APH panel.
 
 A working VPN server/provider profile is required. APH does not provide a VPN gateway. Closed app subscriptions and Amnezia vpn:// links cannot be imported directly. OpenVPN external-file profiles, scripts, proxies, PKCS#11 and interactive MFA are unsupported. TLS server certificate verification is enforced. Profiles, keys and credentials are encrypted with Android Keystore and can be deleted in settings.
+
+## Client hardening
+
+Version 0.8.1 shrinks and renames proprietary Java implementation code and obfuscates the packaged WebView JavaScript. Native bridge contracts are preserved. Source maps, original application UI sources and private diagnostic mappings are not distributed. Required open-source native sources and licenses remain included. Obfuscation increases reverse-engineering effort; it is not an absolute copying barrier.
 
 ## Features
 

@@ -1,5 +1,12 @@
 # Android release notes
 
+## 0.8.1 - 2026-10-24
+
+- Hardened proprietary Java and WebView implementation code while preserving JNI and JavaScript bridge contracts.
+- Kept private diagnostic mappings outside public artifacts and preserved safe support diagnostics.
+- Passed post-obfuscation collector/profile regressions, browser scenarios and DEX/package checks.
+- Replaces the unprotected 0.8.0 APK; native sources/licenses remain available. Live VPN testing limits from 0.8.0 still apply.
+
 ## 0.8.0 - 2026-10-24
 
 - Built-in WireGuard, AmneziaWG and OpenVPN profile import and game-only tunneling.
@@ -8,7 +15,7 @@
 - Includes exact matching native sources/licenses and checksums.
 - Beta: the new VPN transports still require physical Android/provider testing; no website deployment is included.
 
-## 0.6.0 — 2026-10-19
+## 0.6.0 вЂ” 2026-10-19
 
 - Added the PRO / PRO+ Loot Tracker beta with explicit recording sessions.
 - Observed own silver, item drops and chest loot, including Take All merges into existing inventory stacks.
