@@ -1,5 +1,13 @@
 # Android release notes
 
+## 0.8.0 - 2026-10-24
+
+- Built-in WireGuard, AmneziaWG and OpenVPN profile import and game-only tunneling.
+- Encrypted profile/credential storage, connection/auth/TLS status and automatic bounded support diagnostics.
+- Faster market-page capture and upload, deduplication and native TUN backpressure handling.
+- Includes exact matching native sources/licenses and checksums.
+- Beta: the new VPN transports still require physical Android/provider testing; no website deployment is included.
+
 ## 0.6.0 — 2026-10-19
 
 - Added the PRO / PRO+ Loot Tracker beta with explicit recording sessions.

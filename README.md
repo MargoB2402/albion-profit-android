@@ -1,58 +1,48 @@
 # Albion Profit Sync for Android
 
-## Loot Tracker beta — 0.6.0
+## Android 0.8.0 beta - VPN transports and market capture
 
-Start capture, show the floating overlay, open **Loot**, then tap **Start loot session**. Automatic loot recording and account history require **PRO or PRO+**. Each stop/start creates a separate session. Market capture continues while loot recording is stopped; already queued loot continues uploading.
+**[Download APK 0.8.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.8.0/AlbionProfitSync-0.8.0.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
 
-The collector observes own silver after taxes, item drops and chest pickups, including merges into existing stacks. Unlinked bank/craft inventory updates and requests without confirmation are not counted. Loot is sent privately to your selected account, site and game server. Queue storage survives service restarts and retries failed uploads.
+Public direct-install beta for [Albion Profit Hub](https://albionprofithub.com/overlay#android) and [Albion Profit](https://promptly.sbs/overlay#android). Windows is distributed separately at [albion-profit-overlay](https://github.com/MargoB2402/albion-profit-overlay/releases/latest).
 
-The floating Loot tab shows the 24 most recently seen loot types, sorts by quantity/value/latest/name and expands up to 20 recent pickups per card. Use the website `/loot-logger` page for full account history, session filters and splitting. Website/server 1.9.0 updates are needed to retain session metadata. CSV file import and splitting on the website remain free.
+## Install and connect
 
-Synthetic protocol, six-stack chest replay, subscription UI, narrow-screen and APK package checks passed. **Android loot capture has not yet been verified in live gameplay.** Encrypted or unobserved packets cannot be reconstructed. This is a separate Android beta; it does not replace the Windows updater.
+1. Install the APK over the previous Android beta. The signing identity is unchanged. Allow installation from your browser/Files app if Android asks.
+2. Enter your website, account and overlay key from the website profile. Select the actual game server and private/shared prices. Do not use your website password as the overlay key.
+3. Choose a connection mode:
+   - **Direct capture:** local forwarding without a remote VPN server. If another VPN is active, it is preserved and only floating tools open; price capture is unavailable in that mode.
+   - **WireGuard / AmneziaWG:** import your provider's .conf. Supported AmneziaWG obfuscation parameters are detected and retained.
+   - **OpenVPN:** import a self-contained client .ovpn with embedded CA/certificates/keys. Enter VPN login/password and private-key password only if required by your provider.
+4. Tap Connect and accept Android VPN consent. Built-in VPN mode replaces another VPN after confirmation. Only Albion uses this tunnel; other apps retain normal networking. Reconnect Albion after starting capture.
+5. Browse a city market. Full-page price collection does not require opening every item. Allow display over other apps for the floating APH panel.
 
-Public Android beta downloads and device feedback for [Albion Profit Hub](https://albionprofithub.com/overlay#android) and [Albion Profit](https://promptly.sbs/overlay#android).
+A working VPN server/provider profile is required. APH does not provide a VPN gateway. Closed app subscriptions and Amnezia vpn:// links cannot be imported directly. OpenVPN external-file profiles, scripts, proxies, PKCS#11 and interactive MFA are unsupported. TLS server certificate verification is enforced. Profiles, keys and credentials are encrypted with Android Keystore and can be deleted in settings.
 
-**[Download APK 0.6.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.6.0/AlbionProfitSync-0.6.0.apk)** · Android 8.0+ · Phones and tablets · No separate PCAPdroid installation
+## Features
 
-## What it does
+- Observed market price collection and account synchronization with private price settings preserved.
+- Floating price comparison, transport, crafting, enchanting, loot split, alerts, favorites and outbid tools; website account/subscription rules apply.
+- Existing Loot Tracker and Island Tracker beta modules. This update does not add fishing/gathering capture or establish live loot correctness.
+- Faster market uploads with bounded queues and deduplication of recently acknowledged unchanged prices.
+- Automatic important technical diagnostics, including connection/authentication/TLS status. Reports exclude VPN profiles, keys, endpoints, chat and raw packets. No manual send action is required.
 
-- Collects prices from Albion markets you open and synchronizes them with your website account.
-- Preserves private price settings. The server enforces your subscription for paid analytics and actions.
-- Offers floating city prices, transport, crafting, enchanting, loot split, alerts, favorites and outbid listings.
-- Uses vertical navigation and narrow-screen layouts, with complete item search and tier/enchantment filters.
-- Optional private Island Tracker beta: observed crops and animals, estimated timers and confirmed farming actions. View state and recent history in the floating Islands tab (PRO+), with full history on the website.
+Server operators must deploy the corresponding mobile intake and diagnostics backend changes to accept new engine codes and faster uploads. A GitHub release does not deploy the websites.
 
-## Island Tracker beta — 0.5.1
+## Validation and beta limits
 
-Enable **Island tracking (beta)** in the app settings before starting capture, then enter an island and approach crops or animals. Collection and server storage require PRO+. Collection is off by default and remains private, including when market prices are shared. Queued records survive restarts and retry after connectivity failures; queued/sent counters appear in the app and Islands panel.
+Local WireGuard/AmneziaWG authenticated encrypted round trips passed with Go race detection. The actual OpenVPN packet relay passed bidirectional payload/filter/stop tests. Profile validation, market decoder regressions and APK/signature checks passed. The universal APK includes four ABIs with 16 KiB ELF alignment and excludes debug instrumentation.
 
-Timers reflect the last observed state. Planting, care actions and automatic Focus attribution are not recorded yet; unseen actions while you are away are not tracked. This new tracker has passed synthetic protocol and UI checks, but has **not yet been verified on a real island or Android device**. The earlier market capture test does not validate island tracking. Feedback from island owners is welcome.
-
-## Install
-
-1. Download the APK on your Android device and open it. If asked, allow installation from that browser or Files app.
-2. Choose your website, account and overlay key from your website profile. Use the overlay key, not your password. Choose the actual Albion region and private/shared prices.
-3. Tap Connect. Approve Android's local VPN consent once. For the floating panel, separately allow display over other apps.
-4. Enter Albion, move into a city, and browse a market. If capture started while already in town, change zones once first. Tap APH to open the panel.
-
-Capture/forwarding is local to the device and limited to Albion. No remote VPN gateway, root, TLS certificate or game modification. Android allows one active VPN per profile. iOS is not supported.
-
-This is a public direct-install beta before a future Google Play release. It was live-tested with market prices on an Android 16 tablet; other hardware and long sessions need community feedback. Google Play review/testing has not been represented as completed. App updates currently mean downloading and installing a newer APK from Releases.
+**The new VPN transports have not yet been verified on a physical Android device or real provider network.** OpenVPN encrypted connectivity, Albion zone changes, long sessions and Wi-Fi/mobile transitions still need live testing. Earlier tablet market tests apply to previous versions, not these new transports. This is not a Google Play release; updates are installed from GitHub Releases.
 
 ## Feedback
 
-[Report a problem](https://github.com/MargoB2402/albion-profit-android/issues/new?template=android-bug.yml), [suggest an improvement](https://github.com/MargoB2402/albion-profit-android/issues/new?template=android-idea.yml), or [talk on Discord](https://discord.gg/yrP8RZJCwQ).
+[Report a problem](https://github.com/MargoB2402/albion-profit-android/issues/new?template=android-bug.yml), [suggest an improvement](https://github.com/MargoB2402/albion-profit-android/issues/new?template=android-idea.yml), or [Discord](https://discord.gg/yrP8RZJCwQ).
 
-Include device model, Android/app versions, server/city and steps to reproduce. For performance reports, mention whether the floating panel was open. Do not post passwords, overlay keys or raw network captures.
+Include device/Android/app versions, selected transport, server/city and reproduction steps. Do not post VPN profiles, passwords, overlay keys or raw network captures. Support diagnostics are collected automatically for authorized accounts when the updated website endpoint is available.
 
-## Checksums and native source
+## Checksums, source and licenses
 
-Each release includes SHA256SUMS.txt and the matching native source ZIP. The APK also exposes licenses and source export without signing in. zdtun and the JNI adapter are LGPL-3.0-or-later; copyright, complete license text, pinned source revision and rebuilding/replacement instructions are included in the native archive. The shared library is dynamically linked.
+Each release includes SHA256SUMS.txt and the exact native-source archive extracted from its APK. The app's Licenses screen also exports it without signing in. It includes matching sources, pinned revisions, build instructions and original notices for WireGuard/AmneziaWG (MIT), OpenVPN Core and our adapter (MPL-2.0 option), mbedTLS and dependencies, zdtun/JNI (LGPL-3.0-or-later).
 
-This repository distributes the app; it does not grant an open-source license to the website or all app components. See the individual bundled licenses for their terms. Website access remains subject to your account and subscription.
-
-## Русский
-
-Скачайте APK по ссылке выше и установите через браузер или «Файлы». Отдельный PCAPdroid не нужен. Подключите аккаунт ключом оверлея из профиля сайта, выберите сервер игры и разрешите локальный VPN; для панели APH — показ поверх приложений. Войдите в город и откройте рынок. Платные функции доступны по подписке сайта.
-
-Для отзыва укажите модель устройства, Android, версию приложения и шаги до ошибки. Ключи и пароли не публикуйте. Это открытая бета; публикация в Google Play ещё впереди.
+This repository is for app distribution and public documentation. It does not publish or grant an open-source license to the website or all commercial app components. Individual bundled licenses apply to their covered components. Website access remains subject to account/subscription rules.
