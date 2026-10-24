@@ -1,8 +1,10 @@
 # Albion Profit Sync for Android
 
-## Android 0.8.1 beta - Hardened client and VPN transports
+## Android 0.9.0 beta - Gathering and fishing
 
-**[Download APK 0.8.1](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.8.1/AlbionProfitSync-0.8.1.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
+**[Download APK 0.9.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.9.0/AlbionProfitSync-0.9.0.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
+
+The free **Gathering & fishing** tab adds local recording sessions, grouped resources/fish, and seven-city sale estimates. Choose instant sale or sell orders, configure fees/freshness, and expand each item for time, location and quantity. The website must have the new harvest-prices endpoint for valuation. Estimates do not guarantee that all items will sell. New live capture still needs physical-device gameplay testing; existing Loot Tracker gates are unchanged.
 
 Public direct-install beta for [Albion Profit Hub](https://albionprofithub.com/overlay#android) and [Albion Profit](https://promptly.sbs/overlay#android). Windows is distributed separately at [albion-profit-overlay](https://github.com/MargoB2402/albion-profit-overlay/releases/latest).
 

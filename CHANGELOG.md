@@ -1,5 +1,12 @@
 # Android release notes
 
+## 0.9.0 - 2026-10-24
+
+- Free Gathering & fishing tab: separate local sessions, grouped resources/fish and expandable time/location/quantity history.
+- Compare seven cities for instant sale or sell orders, with configurable fees, freshness and best cities per item/whole harvest.
+- Preserved Java/WebView obfuscation, signing identity, VPN transports and support diagnostics. Included native sources/licenses match the APK.
+- Requires the new website harvest-prices endpoint for valuation. New live gameplay capture remains beta; sessions stay local and existing Loot Tracker gates are unchanged.
+
 ## 0.8.1 - 2026-10-24
 
 - Hardened proprietary Java and WebView implementation code while preserving JNI and JavaScript bridge contracts.
