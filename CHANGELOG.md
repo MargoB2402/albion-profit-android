@@ -1,5 +1,12 @@
 # Android release notes
 
+## 0.9.1 - 2026-10-25
+
+- Added detailed automatic market capture counters and unresolved-market categories, without packet contents or credentials.
+- Distinguished Android VPN revocation and reset diagnostic counters between capture runs.
+- Preserved signing, Java/WebView hardening and existing gathering/fishing/loot features.
+- Diagnostic update: no confirmed Happ fix or new Happ profile support is claimed. Requires the updated website diagnostic sanitizer.
+
 ## 0.9.0 - 2026-10-24
 
 - Free Gathering & fishing tab: separate local sessions, grouped resources/fish and expandable time/location/quantity history.

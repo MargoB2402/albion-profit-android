@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.1 beta - Market support diagnostics
+
+**[Download APK 0.9.1](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.9.1/AlbionProfitSync-0.9.1.apk)** — Android 8+.
+
+Automatic support reports distinguish market requests/responses, unknown locations and rejected rows, and identify VPN capture revocation separately. Existing capture, gathering and fishing remain available. This update investigates missing prices; it does not add Happ profile support or claim a confirmed fix for every VPN issue. The website must deploy the updated diagnostic sanitizer to retain the new fields. No manual report switch is needed.
+
 ## Android 0.9.0 beta - Gathering and fishing
 
 **[Download APK 0.9.0](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.9.0/AlbionProfitSync-0.9.0.apk)** - Android 8+ - Phones and tablets - No separate PCAPdroid installation.
