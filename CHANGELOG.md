@@ -1,5 +1,20 @@
 # Android release notes
 
+## Android 0.9.2 beta - 2026-10-25
+
+Android 0.9.2 beta improves built-in VPN API routing and gathering identification.
+
+- With an imported WireGuard, AmneziaWG or OpenVPN profile, Albion traffic and this app's website/API requests use the built-in tunnel. The tunnel's outer sockets are protected from routing loops; other apps keep normal networking.
+- Account verification runs after the built-in tunnel starts. Price uploads wait for successful verification and respect server-enforced private mode.
+- Gathering accepts signed character IDs and validated complete zone-entry responses. The free gathering tab shows when character identification or game capture is missing, with seven-language instructions and aggregate counters.
+
+Update by installing the APK over the previous beta; the signing identity and local settings are preserved. A real provider/server profile is required. An external Happ VPN alone does not enable capture: Android tools-only mode is still separate. Existing subscription gates remain unchanged.
+
+Checks: encrypted WG/AWG game/TCP packet roundtrips, Go race tests, four native ABIs, JNI/R8, post-obfuscation JVM regressions, protected UI and narrow-screen checks. There is no connected physical phone; provider-specific Android connectivity and the reported live gathering issue are not yet confirmed. Missing earlier harvest is not reconstructed.
+
+APK, matching native source archive and SHA256SUMS.txt are attached. Private Java/UI sources, credentials and obfuscation mappings are not published.
+
+
 ## 0.9.1 - 2026-10-25
 
 - Added detailed automatic market capture counters and unresolved-market categories, without packet contents or credentials.

@@ -1,5 +1,22 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.2 beta
+
+[Download and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.2)
+
+Android 0.9.2 beta improves built-in VPN API routing and gathering identification.
+
+- With an imported WireGuard, AmneziaWG or OpenVPN profile, Albion traffic and this app's website/API requests use the built-in tunnel. The tunnel's outer sockets are protected from routing loops; other apps keep normal networking.
+- Account verification runs after the built-in tunnel starts. Price uploads wait for successful verification and respect server-enforced private mode.
+- Gathering accepts signed character IDs and validated complete zone-entry responses. The free gathering tab shows when character identification or game capture is missing, with seven-language instructions and aggregate counters.
+
+Update by installing the APK over the previous beta; the signing identity and local settings are preserved. A real provider/server profile is required. An external Happ VPN alone does not enable capture: Android tools-only mode is still separate. Existing subscription gates remain unchanged.
+
+Checks: encrypted WG/AWG game/TCP packet roundtrips, Go race tests, four native ABIs, JNI/R8, post-obfuscation JVM regressions, protected UI and narrow-screen checks. There is no connected physical phone; provider-specific Android connectivity and the reported live gathering issue are not yet confirmed. Missing earlier harvest is not reconstructed.
+
+APK, matching native source archive and SHA256SUMS.txt are attached. Private Java/UI sources, credentials and obfuscation mappings are not published.
+
+
 ## Android 0.9.1 beta - Market support diagnostics
 
 **[Download APK 0.9.1](https://github.com/MargoB2402/albion-profit-android/releases/download/v0.9.1/AlbionProfitSync-0.9.1.apk)** — Android 8+.
@@ -22,7 +39,7 @@ Public direct-install beta for [Albion Profit Hub](https://albionprofithub.com/o
    - **Direct capture:** local forwarding without a remote VPN server. If another VPN is active, it is preserved and only floating tools open; price capture is unavailable in that mode.
    - **WireGuard / AmneziaWG:** import your provider's .conf. Supported AmneziaWG obfuscation parameters are detected and retained.
    - **OpenVPN:** import a self-contained client .ovpn with embedded CA/certificates/keys. Enter VPN login/password and private-key password only if required by your provider.
-4. Tap Connect and accept Android VPN consent. Built-in VPN mode replaces another VPN after confirmation. Only Albion uses this tunnel; other apps retain normal networking. Reconnect Albion after starting capture.
+4. Tap Connect and accept Android VPN consent. Built-in VPN mode replaces another VPN after confirmation. Albion and this app's website/API requests use this tunnel; other apps retain normal networking. Reconnect Albion after starting capture.
 5. Browse a city market. Full-page price collection does not require opening every item. Allow display over other apps for the floating APH panel.
 
 A working VPN server/provider profile is required. APH does not provide a VPN gateway. Closed app subscriptions and Amnezia vpn:// links cannot be imported directly. OpenVPN external-file profiles, scripts, proxies, PKCS#11 and interactive MFA are unsupported. TLS server certificate verification is enforced. Profiles, keys and credentials are encrypted with Android Keystore and can be deleted in settings.
