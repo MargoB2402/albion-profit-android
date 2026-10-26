@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.7 beta
+
+[Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.7)
+
+Take-all late membership and partial-transfer fixes, touch enchantment controls, fresh device quotes ahead of stale cache, and explicit session time ranges/duration/zones. Cloud session metadata requires the companion API update; ordinary loot uploads remain compatible with the old API. Physical-device confirmation is still needed.
+
 ## Android 0.9.6 beta
 
 [Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.6)
