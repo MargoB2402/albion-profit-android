@@ -1,5 +1,12 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.5 beta
+
+[Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.5)
+
+Website API requests now use Xray directly, bypassing the game virtual TCP adapter. Zone-transition handling and early panel shutdown are improved. Local HTTPS/TLS/race checks pass; provider stability and ping still require a device retest.
+
+
 ## Android 0.9.4 beta
 
 [Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.4)
