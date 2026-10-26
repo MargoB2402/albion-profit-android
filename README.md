@@ -1,5 +1,12 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.4 beta
+
+[Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.4)
+
+Happ JSON server selection, split SOCKS reply handling, world-zone display and network diagnostic categories. Provider stability still requires a device retest.
+
+
 ## Android 0.9.3 beta
 
 [Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.3)
