@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.6 beta
+
+[Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.6)
+
+Loot value, observed fame and hourly session rates; Android world-zone header fix. Ending a loot session keeps the window open. Market estimates/unpriced items are explicit. Device verification is still needed.
+
 ## Android 0.9.5 beta
 
 [Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.5)
