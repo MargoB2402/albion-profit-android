@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## Android 0.9.8 - crafting and focus tracker
+
+[Download and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.8)
+
+Completed crafting batches, observed focus/returns and real ledger links. Partial sales, exact fees and silver per focus are separate from market-price estimates. Cloud batches and accounting links require the companion API and ledger update.
+
 ## Android 0.9.7 beta
 
 [Download APK and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.7)
