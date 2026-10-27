@@ -1,5 +1,9 @@
 # Albion Profit Sync for Android
 
+[Android 0.9.9 beta: learning, trade and farming observations](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.9)
+
+Matched server deployment is required for challenge evaluation. Planting currently has fixture-based validation; a live island check remains pending.
+
 ## Android 0.9.8 - crafting and focus tracker
 
 [Download and release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.8)
