@@ -1,5 +1,12 @@
 # Albion Profit Sync for Android
 
+## Android 1.0.32 - Clear VPN status and diagnostics
+
+The overlay now shows whether APH VPN is actually in use and offers activated customers a switch action when they still use an old connection. Support diagnostics distinguish tunnel state from synchronization/API delays.
+
+[Download and full release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v1.0.32).
+
+
 ## 1.0.31 - Encrypted VLESS and VPN activation
 
 [Download 1.0.31](https://github.com/MargoB2402/albion-profit-android/releases/download/v1.0.31/AlbionProfitSync-1.0.31.apk) | [Release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v1.0.31)
