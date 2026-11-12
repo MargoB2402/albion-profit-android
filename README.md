@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## Android 1.0.30 - VLESS import fixes
+
+[Download APK 1.0.30](https://github.com/MargoB2402/albion-profit-android/releases/download/v1.0.30/AlbionProfitSync-1.0.30.apk) | [Release notes and SHA256 checksums](https://github.com/MargoB2402/albion-profit-android/releases/tag/v1.0.30)
+
+Empty optional SNI, fingerprint and HTTPUpgrade host values now use defaults. Server selection explains incompatible profiles before import. Install over the previous version; the signing certificate is unchanged. Android 8.0+, four architectures. The original replacement provider profile was unavailable for device verification.
+
 [Android 0.9.9 beta: learning, trade and farming observations](https://github.com/MargoB2402/albion-profit-android/releases/tag/v0.9.9)
 
 Matched server deployment is required for challenge evaluation. Planting currently has fixture-based validation; a live island check remains pending.
