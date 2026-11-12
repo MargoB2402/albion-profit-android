@@ -1,5 +1,11 @@
 # Albion Profit Sync for Android
 
+## 1.0.31 - Encrypted VLESS and VPN activation
+
+[Download 1.0.31](https://github.com/MargoB2402/albion-profit-android/releases/download/v1.0.31/AlbionProfitSync-1.0.31.apk) | [Release notes](https://github.com/MargoB2402/albion-profit-android/releases/tag/v1.0.31)
+
+Validated VLESS Encryption imports and one APH VPN action for demo and subscription vouchers. Install over the previous Android version.
+
 ## Android 1.0.30 - VLESS import fixes
 
 [Download APK 1.0.30](https://github.com/MargoB2402/albion-profit-android/releases/download/v1.0.30/AlbionProfitSync-1.0.30.apk) | [Release notes and SHA256 checksums](https://github.com/MargoB2402/albion-profit-android/releases/tag/v1.0.30)
